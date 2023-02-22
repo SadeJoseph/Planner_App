@@ -63,7 +63,7 @@ console.log(timeNow)
       displayTime =moment (i.toString(), ["HH"]).add(1, "hour").format("hh A")
   }
 }
-
+//icons change once saved 
  $(".saveButt").click(function() {
     $(this).children("i").removeClass("fa fa-unlock")
     $(this).children("i").addClass("fa fa-unlock")

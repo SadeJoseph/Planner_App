@@ -29,9 +29,9 @@ console.log(timeNow)
  function timeBlock (){
     var displayTime = "09 AM";
     var icon;
-    ul = #("<ul>").addClass("time-block")
+    ul = $("<ul>").addClass("time-block")
     container.append(ul)
- }
+ 
 
   for (var i= 9; i < 18; i++) {
     li= $("<li>").addClass("rows")
@@ -51,5 +51,17 @@ console.log(timeNow)
 
 
       //local storage 
+
+      textBox.val(localStorage.getItem(`${i}`))
+      button =$("<button>").addClass("saveButt")
+
+      icon = $("<i>").addClass("fa fa-unlock")
+      button.attr("item-Number", )
+      button.append(icon)
+      li.append(hourSect).append(textBox).append(button)
+      ul.append(li)
+      displayTime =moment (i.toString(), ["HH"]).add(1, "hour").format("hh A")
   }
+}
+
  

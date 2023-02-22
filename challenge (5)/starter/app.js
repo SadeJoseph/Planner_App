@@ -10,7 +10,7 @@ let taskArray =[]
 
 let ul;
 let button;
-let textbox;
+let textBox;
 let li;
 let hourSect;
 
@@ -33,5 +33,13 @@ console.log(timeNow)
     container.append(ul)
  }
 
+  for (var i= 9; i < 18; i++) {
+    li= $("<li>").addClass("rows")
+    hourSect =$("<div>").addClass("hour")
+    hourSect.text(displayTime)
 
+
+
+    textBox = $("<textBox")
+  }
  

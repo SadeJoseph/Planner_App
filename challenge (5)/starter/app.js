@@ -29,7 +29,7 @@ console.log(timeNow)
  function timeBlock (){
     var displayTime = "09 AM";
     var icon;
-    ul = #("ul").addClass("time-block")
+    ul = #("<ul>").addClass("time-block")
     container.append(ul)
  }
 

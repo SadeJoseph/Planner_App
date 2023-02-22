@@ -26,7 +26,7 @@ console.log(timeNow)
 
  //time blcoks
 
- function timeBlock (){
+ function timeBlock() {
     var displayTime = "09 AM";
     var icon;
     ul = $("<ul>").addClass("time-block")
@@ -34,14 +34,14 @@ console.log(timeNow)
  
 
   for (var i= 9; i < 18; i++) {
-    li= $("<li>").addClass("rows")
+    li= $("<li>").addClass("row")
     hourSect =$("<div>").addClass("hour")
     hourSect.text(displayTime)
 
 
 
-    textBox = $("<textBox")
-     if (timeNow=== i)
+    textBox = $("<textbox>")
+     if (timeNow === i)
       textBox.addClass("present")
       else if (timeNow > i)
       textBox.addClass("past")
@@ -54,7 +54,6 @@ console.log(timeNow)
 
       textBox.val(localStorage.getItem(`${i}`))
       button =$("<button>").addClass("saveButt")
-
       icon = $("<i>").addClass("fa fa-unlock")
       button.attr("item-Number", )
       button.append(icon)

@@ -64,4 +64,8 @@ console.log(timeNow)
   }
 }
 
- 
+ $(."saveButt").click(function() {
+    $(this).children("i").removeClass("fa fa-unlock")
+    $(this).children("i").addClass("fa fa-unlock")
+      localStorage.setItem(`${$(this).attr("item-Number")}`, $(this))
+ }

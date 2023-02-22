@@ -41,5 +41,15 @@ console.log(timeNow)
 
 
     textBox = $("<textBox")
+     if (timeNow=== i)
+      textBox.addClass("present")
+      else if (timeNow > i)
+      textBox.addClass("past")
+      else {
+        textBox.addClass("future")
+      }
+
+
+      //local storage 
   }
  

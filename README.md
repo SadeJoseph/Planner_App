@@ -6,7 +6,7 @@ Our task was to compete  simple calendar application that allows a user to save 
 
 
 ## Screenshot 
-![screenshot] (./starter/screenshot.png)
+![Screenshot](/screenshot.png)
 
 ## Application link
 

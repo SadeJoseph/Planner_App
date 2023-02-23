@@ -10,3 +10,5 @@ Our task was to compete  simple calendar application that allows a user to save 
 
 ## Application link
 
+https://sadejoseph.github.io/Planner_App/
+

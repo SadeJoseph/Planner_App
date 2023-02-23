@@ -41,13 +41,14 @@ console.log(timeNow)
 
 
     textBox = $("<textbox>")
-     if (timeNow === i)
+     if (timeNow == i)
       textBox.addClass("present")
       else if (timeNow > i)
       textBox.addClass("past")
       else {
         textBox.addClass("future")
       }
+      
 
 
       //local storage 
@@ -55,7 +56,7 @@ console.log(timeNow)
       textBox.val(localStorage.getItem(`${i}`))
       button =$("<button>").addClass("saveButt")
       icon = $("<i>").addClass("fa fa-unlock")
-      button.attr("item-Number", )
+      button.attr("item-Number",i )
       button.append(icon)
       li.append(hourSect).append(textBox).append(button)
       ul.append(li)
@@ -66,5 +67,5 @@ console.log(timeNow)
  $(".saveButt").click(function() {
     $(this).children("i").removeClass("fa fa-unlock")
     $(this).children("i").addClass("fa fa-unlock")
-      localStorage.setItem(`${$(this).attr("item-Number")}`, $(this).siblings("textBox").val())
+      localStorage.setItem(`${$(this).attr("item-Number")}`, $(this).siblings("textbox").val())
  })
